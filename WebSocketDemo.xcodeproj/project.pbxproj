@@ -13,6 +13,7 @@
 		9FD1FEDB1A9FB61B00C78A08 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FD1FEDA1A9FB61B00C78A08 /* Images.xcassets */; };
 		9FD1FEDE1A9FB61B00C78A08 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FD1FEDC1A9FB61B00C78A08 /* LaunchScreen.xib */; };
 		9FD1FEEA1A9FB61C00C78A08 /* WebSocketDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD1FEE91A9FB61C00C78A08 /* WebSocketDemoTests.swift */; };
+		9FD1FEFB1A9FD87500C78A08 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD1FEFA1A9FD87500C78A08 /* SRWebSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,9 @@
 		9FD1FEE31A9FB61C00C78A08 /* WebSocketDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebSocketDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD1FEE81A9FB61C00C78A08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FD1FEE91A9FB61C00C78A08 /* WebSocketDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketDemoTests.swift; sourceTree = "<group>"; };
+		9FD1FEF81A9FD87500C78A08 /* SocketRocket-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-Prefix.pch"; sourceTree = "<group>"; };
+		9FD1FEF91A9FD87500C78A08 /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
+		9FD1FEFA1A9FD87500C78A08 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				9FD1FED01A9FB61B00C78A08 /* WebSocketDemo */,
+				9FD1FEF71A9FD87500C78A08 /* SocketRocket */,
 				9FD1FEE61A9FB61C00C78A08 /* WebSocketDemoTests */,
 				9FD1FECF1A9FB61B00C78A08 /* Products */,
 			);
@@ -110,6 +115,16 @@
 				9FD1FEE81A9FB61C00C78A08 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9FD1FEF71A9FD87500C78A08 /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				9FD1FEF81A9FD87500C78A08 /* SocketRocket-Prefix.pch */,
+				9FD1FEF91A9FD87500C78A08 /* SRWebSocket.h */,
+				9FD1FEFA1A9FD87500C78A08 /* SRWebSocket.m */,
+			);
+			path = SocketRocket;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FD1FEFB1A9FD87500C78A08 /* SRWebSocket.m in Sources */,
 				9FD1FED61A9FB61B00C78A08 /* ViewController.swift in Sources */,
 				9FD1FED41A9FB61B00C78A08 /* AppDelegate.swift in Sources */,
 			);
@@ -405,6 +421,7 @@
 				9FD1FEEF1A9FB61C00C78A08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9FD1FEF01A9FB61C00C78A08 /* Build configuration list for PBXNativeTarget "WebSocketDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +430,7 @@
 				9FD1FEF21A9FB61C00C78A08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
