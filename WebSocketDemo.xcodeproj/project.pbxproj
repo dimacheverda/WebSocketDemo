@@ -18,6 +18,8 @@
 		9FD1FF031A9FDD2200C78A08 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD1FF021A9FDD2200C78A08 /* CFNetwork.framework */; };
 		9FD1FF051A9FDD2700C78A08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD1FF041A9FDD2700C78A08 /* Foundation.framework */; };
 		9FD1FF071A9FDD2D00C78A08 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD1FF061A9FDD2D00C78A08 /* Security.framework */; };
+		9FE91CA51AA09F8400A2AF07 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE91CA41AA09F8400A2AF07 /* ChatMessage.swift */; };
+		9FE91CA71AA0A00E00A2AF07 /* ChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE91CA61AA0A00E00A2AF07 /* ChatManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		9FD1FF021A9FDD2200C78A08 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		9FD1FF041A9FDD2700C78A08 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9FD1FF061A9FDD2D00C78A08 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9FE91CA41AA09F8400A2AF07 /* ChatMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		9FE91CA61AA0A00E00A2AF07 /* ChatManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 			children = (
 				9FD1FED31A9FB61B00C78A08 /* AppDelegate.swift */,
 				9FD1FED51A9FB61B00C78A08 /* ViewController.swift */,
+				9FE91CA41AA09F8400A2AF07 /* ChatMessage.swift */,
+				9FE91CA61AA0A00E00A2AF07 /* ChatManager.swift */,
 				9FD1FED71A9FB61B00C78A08 /* Main.storyboard */,
 				9FD1FEDA1A9FB61B00C78A08 /* Images.xcassets */,
 				9FD1FEDC1A9FB61B00C78A08 /* LaunchScreen.xib */,
@@ -253,7 +259,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FE91CA71AA0A00E00A2AF07 /* ChatManager.swift in Sources */,
 				9FD1FEFB1A9FD87500C78A08 /* SRWebSocket.m in Sources */,
+				9FE91CA51AA09F8400A2AF07 /* ChatMessage.swift in Sources */,
 				9FD1FED61A9FB61B00C78A08 /* ViewController.swift in Sources */,
 				9FD1FED41A9FB61B00C78A08 /* AppDelegate.swift in Sources */,
 			);
