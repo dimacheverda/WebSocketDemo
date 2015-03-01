@@ -69,28 +69,22 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: UITableViewDataSource {
-  func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-    return 1
-  }
-  
   func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return chatManager.messages.count
   }
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cellIdentifier = "MessageCell"
-    var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as UITableViewCell
-    
-    cell.clipsToBounds = false
-    
+    var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as UITableViewCell
+  
     let currentMessage = chatManager.messages[indexPath.row] as ChatMessage
     
     if currentMessage.isMe == true {
       cell.textLabel?.text = currentMessage.text
-      cell.detailTextLabel?.text = ""
+      cell.detailTextLabel?.text = " "
     } else {
       cell.detailTextLabel?.text = currentMessage.text
-      cell.textLabel?.text = ""
+      cell.textLabel?.text = " "
     }
     
     return cell
