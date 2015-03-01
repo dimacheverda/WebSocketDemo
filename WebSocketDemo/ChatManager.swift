@@ -34,12 +34,16 @@ class ChatManager: NSObject {
   func postMessageRecievedNotification(message: AnyObject!) {
     NSNotificationCenter.defaultCenter().postNotificationName("kMessageRecievedNotification", object: nil)
   }
+  
+  func postWebSocketOpenedNotification() {
+    NSNotificationCenter.defaultCenter().postNotificationName("kWebSocketOpenedNotification", object: nil)
+  }
 }
 
 extension ChatManager: SRWebSocketDelegate {
 
   func webSocketDidOpen(webSocket: SRWebSocket!) {
-
+    postWebSocketOpenedNotification()
   }
 
   func webSocket(webSocket: SRWebSocket!, didReceiveMessage message: AnyObject!) {
