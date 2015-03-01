@@ -1,15 +1,15 @@
 //
-//  WebSocketDemoTests.swift
-//  WebSocketDemoTests
+//  ChatManagerTests.swift
+//  WebSocketDemo
 //
-//  Created by Dima Cheverda on 2/26/15.
+//  Created by Dima Cheverda on 3/1/15.
 //  Copyright (c) 2015 Dima Cheverda. All rights reserved.
 //
 
 import UIKit
 import XCTest
 
-class WebSocketDemoTests: XCTestCase {
+class ChatManagerTests: XCTestCase {
   
   override func setUp() {
     super.setUp()
@@ -21,15 +21,6 @@ class WebSocketDemoTests: XCTestCase {
     super.tearDown()
   }
   
-  func testExample() {
-    // This is an example of a functional test case.
-    XCTAssert(true, "Pass")
-  }
   
-  func testPerformanceExample() {
-    // This is an example of a performance test case.
-    self.measureBlock() {
-      // Put the code you want to measure the time of here.
-    }
-  }
+  
 }

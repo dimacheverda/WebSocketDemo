@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F55A9D91AA3A2C300AB20B1 /* ChatMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F55A9D81AA3A2C300AB20B1 /* ChatMessageTests.swift */; };
+		9F55A9DB1AA3A30200AB20B1 /* ChatManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F55A9DA1AA3A30200AB20B1 /* ChatManagerTests.swift */; };
+		9F55A9DE1AA3A77000AB20B1 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE91CA41AA09F8400A2AF07 /* ChatMessage.swift */; };
+		9F55A9DF1AA3A77300AB20B1 /* ChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE91CA61AA0A00E00A2AF07 /* ChatManager.swift */; };
 		9FD1FED41A9FB61B00C78A08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD1FED31A9FB61B00C78A08 /* AppDelegate.swift */; };
 		9FD1FED61A9FB61B00C78A08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD1FED51A9FB61B00C78A08 /* ViewController.swift */; };
 		9FD1FED91A9FB61B00C78A08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FD1FED71A9FB61B00C78A08 /* Main.storyboard */; };
 		9FD1FEDB1A9FB61B00C78A08 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FD1FEDA1A9FB61B00C78A08 /* Images.xcassets */; };
 		9FD1FEDE1A9FB61B00C78A08 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FD1FEDC1A9FB61B00C78A08 /* LaunchScreen.xib */; };
-		9FD1FEEA1A9FB61C00C78A08 /* WebSocketDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD1FEE91A9FB61C00C78A08 /* WebSocketDemoTests.swift */; };
 		9FD1FEFB1A9FD87500C78A08 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD1FEFA1A9FD87500C78A08 /* SRWebSocket.m */; };
 		9FD1FF011A9FDD1D00C78A08 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD1FF001A9FDD1D00C78A08 /* libicucore.dylib */; };
 		9FD1FF031A9FDD2200C78A08 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD1FF021A9FDD2200C78A08 /* CFNetwork.framework */; };
@@ -33,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F55A9D71AA3A2C300AB20B1 /* WebSocketDemoTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WebSocketDemoTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		9F55A9D81AA3A2C300AB20B1 /* ChatMessageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatMessageTests.swift; sourceTree = "<group>"; };
+		9F55A9DA1AA3A30200AB20B1 /* ChatManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatManagerTests.swift; sourceTree = "<group>"; };
 		9FD1FECE1A9FB61B00C78A08 /* WebSocketDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebSocketDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD1FED21A9FB61B00C78A08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FD1FED31A9FB61B00C78A08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,7 +48,6 @@
 		9FD1FEDD1A9FB61B00C78A08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9FD1FEE31A9FB61C00C78A08 /* WebSocketDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebSocketDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD1FEE81A9FB61C00C78A08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9FD1FEE91A9FB61C00C78A08 /* WebSocketDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketDemoTests.swift; sourceTree = "<group>"; };
 		9FD1FEF81A9FD87500C78A08 /* SocketRocket-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-Prefix.pch"; sourceTree = "<group>"; };
 		9FD1FEF91A9FD87500C78A08 /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
 		9FD1FEFA1A9FD87500C78A08 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
@@ -123,8 +128,9 @@
 		9FD1FEE61A9FB61C00C78A08 /* WebSocketDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				9FD1FEE91A9FB61C00C78A08 /* WebSocketDemoTests.swift */,
 				9FD1FEE71A9FB61C00C78A08 /* Supporting Files */,
+				9F55A9D81AA3A2C300AB20B1 /* ChatMessageTests.swift */,
+				9F55A9DA1AA3A30200AB20B1 /* ChatManagerTests.swift */,
 			);
 			path = WebSocketDemoTests;
 			sourceTree = "<group>";
@@ -132,6 +138,7 @@
 		9FD1FEE71A9FB61C00C78A08 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9F55A9D71AA3A2C300AB20B1 /* WebSocketDemoTests-Bridging-Header.h */,
 				9FD1FEE81A9FB61C00C78A08 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -271,7 +278,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FD1FEEA1A9FB61C00C78A08 /* WebSocketDemoTests.swift in Sources */,
+				9F55A9DE1AA3A77000AB20B1 /* ChatMessage.swift in Sources */,
+				9F55A9D91AA3A2C300AB20B1 /* ChatMessageTests.swift in Sources */,
+				9F55A9DB1AA3A30200AB20B1 /* ChatManagerTests.swift in Sources */,
+				9F55A9DF1AA3A77300AB20B1 /* ChatManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +418,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -419,6 +430,8 @@
 				INFOPLIST_FILE = WebSocketDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WebSocketDemoTests/WebSocketDemoTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebSocketDemo.app/WebSocketDemo";
 			};
 			name = Debug;
@@ -427,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -434,6 +448,7 @@
 				INFOPLIST_FILE = WebSocketDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WebSocketDemoTests/WebSocketDemoTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebSocketDemo.app/WebSocketDemo";
 			};
 			name = Release;
