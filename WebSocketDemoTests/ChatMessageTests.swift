@@ -21,4 +21,24 @@ class ChatMessageTests: XCTestCase {
     super.tearDown()
   }
   
+  func testChatMessageInit() {
+    let outcomeMessage = ChatMessage(text: "", isMe: true)
+    
+    XCTAssertEqual(outcomeMessage.text, "", "Message text is not set correct")
+    XCTAssertEqual(outcomeMessage.isMe, true, "Message authority is not set correct")
+  }
+  
+  func testChatMessageEqual() {
+    let message1 = ChatMessage(text: "text", isMe: true)
+    let message2 = ChatMessage(text: "text", isMe: true)
+    
+    XCTAssertEqual(message1, message2, "Two messages are not equal")
+  }
+  
+  func testChatMessageNotEqual() {
+    let message1 = ChatMessage(text: "text", isMe: true)
+    let message2 = ChatMessage(text: "different text", isMe: true)
+    
+    XCTAssertNotEqual(message1, message2, "Two messages are equal")
+  }
 }
