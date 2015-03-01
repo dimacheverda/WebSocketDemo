@@ -11,16 +11,52 @@ import XCTest
 
 class ChatManagerTests: XCTestCase {
   
+  var chatManager: ChatManager?
+  var expectation: XCTestExpectation?
+  let messageRecievedNotificationName = "kMessageRecievedNotification"
+  let webSocketOpenedNotificationName = "kWebSocketOpenedNotification"
+  
+  let correctWebSocketURL = NSURL(string: "ws://localhost/api/v1/ws")
+  
   override func setUp() {
     super.setUp()
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    chatManager = ChatManager(url: correctWebSocketURL!)
+    
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: "messageRecieved", name: messageRecievedNotificationName, object: nil)
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: "webSocketOpened", name: webSocketOpenedNotificationName, object: nil)
   }
   
   override func tearDown() {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
     super.tearDown()
+    
+    chatManager?.webSocket.close()
+  }
+  
+  func testForRecievingCorrectResponseMessage() {
+    expectation = self.expectationWithDescription("correct message recieved")
+    
+    self.waitForExpectationsWithTimeout(3.0, handler: nil)
   }
   
   
+  // MARK: - Helper methods
+  
+  func messageRecieved() {
+    if let message = chatManager?.messages.last as ChatMessage? {
+      println(message.text)
+      if message.text == "Hello! Nice to meet you! Success!" &&
+        expectation?.description == "correct message recieved" {
+          expectation?.fulfill()
+      }
+    }
+  }
+  
+  func webSocketOpened() {
+    if expectation?.description == "correct message recieved" {
+      let outputMessage = ChatMessage(text: "hello", isMe: true)
+      chatManager?.sendChatMessage(outputMessage)
+    }
+  }
   
 }
