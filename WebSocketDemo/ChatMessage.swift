@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Dima Cheverda. All rights reserved.
 //
 
-class ChatMessage: NSObject {
+class ChatMessage: NSObject, Equatable {
   
   var text: String!
   var isMe: Bool!
@@ -18,5 +18,10 @@ class ChatMessage: NSObject {
     
     super.init()
   }
-  
+}
+
+func ==(lhs: ChatMessage, rhs: ChatMessage) -> Bool {
+  return
+    lhs.text == rhs.text &&
+    lhs.isMe == rhs.isMe
 }
